@@ -1,3 +1,4 @@
+package GUIBilOpgave;
 
 import javafx.scene.paint.Color;
 
