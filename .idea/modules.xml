@@ -16,6 +16,7 @@
       <module fileurl="file://$PROJECT_DIR$/PRO1 projects.iml" filepath="$PROJECT_DIR$/PRO1 projects.iml" />
       <module fileurl="file://$PROJECT_DIR$/SU1_KlasseKonto/SU1_KlasseKonto.iml" filepath="$PROJECT_DIR$/SU1_KlasseKonto/SU1_KlasseKonto.iml" />
       <module fileurl="file://$PROJECT_DIR$/SU2_Inheritance/SU2_Inheritance.iml" filepath="$PROJECT_DIR$/SU2_Inheritance/SU2_Inheritance.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ThreadingInTheGym/ThreadingInTheGym.iml" filepath="$PROJECT_DIR$/ThreadingInTheGym/ThreadingInTheGym.iml" />
       <module fileurl="file://$PROJECT_DIR$/UnbeatableTicTacToe/UnbeatableTicTacToe.iml" filepath="$PROJECT_DIR$/UnbeatableTicTacToe/UnbeatableTicTacToe.iml" />
     </modules>
   </component>

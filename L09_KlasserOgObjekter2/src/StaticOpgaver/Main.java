@@ -16,10 +16,8 @@ public class Main {
         BankAccount ba12 = new BankAccount(15000);
         BankAccount ba13 = new BankAccount(52000);
 
-        System.out.println(ba11.getBalance(5));
-        System.out.println();
-        System.out.println(ba5.getBalance(5));
-        System.out.println();
+        System.out.println(ba11.getBalance(5) + "\n");
+        System.out.println(ba5.getBalance(5) + "\n");
         System.out.println(BankAccount.getNumberOfIDs());
 
 

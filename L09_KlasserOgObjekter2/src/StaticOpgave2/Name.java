@@ -70,9 +70,6 @@ public class Name {
         for(int i = 0; i <= init.length()-1; i++) {
             char ch = init.charAt(i);
             cryptoInit += alfabet.charAt(alfabet.indexOf(ch)+count);
-//            int index = alfabet.indexOf(ch);
-//            int newIndex = (index + count) % alfabet.length();
-//            cryptoInit += alfabet.charAt(newIndex);
         }
         return cryptoInit;
     }

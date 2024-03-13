@@ -95,6 +95,14 @@ public class Gui extends Application {
             door.setFill(null);
             pane.getChildren().add(door);
         }
+        for (int i = 0; i < car.getDoors(); i++) {
+            Line handle = new Line();
+            handle.setStartX(235 + i * 100);
+            handle.setStartY(180);
+            handle.setEndX(225 + i * 100);
+            handle.setEndY(180);
+            pane.getChildren().addAll(handle);
+        }
 
         Rectangle earth = new Rectangle();
         earth.setX (0);
@@ -107,6 +115,23 @@ public class Gui extends Application {
         Circle sun = new Circle(575,0,100);
         sun.setFill(Color.YELLOW);
         pane.getChildren().add(sun);
+
+        Circle head = new Circle(115,150,10);
+        head.setFill(Color.BLACK);
+        pane.getChildren().add(head);
+
+        Circle eye1 = new Circle(112,146,2);
+        eye1.setFill(Color.WHITE);
+        Circle eye2 = new Circle(118,146,2);
+        eye2.setFill(Color.WHITE);
+        pane.getChildren().addAll(eye1,eye2);
+
+        Line personBody = new Line(115, 160, 115, 170);
+        pane.getChildren().add(personBody);
+
+        Line arm1 = new Line(115, 170, 105, 160);
+        Line arm2 = new Line(115,170,105,165);
+        pane.getChildren().addAll(arm1,arm2);
     }
 
 
