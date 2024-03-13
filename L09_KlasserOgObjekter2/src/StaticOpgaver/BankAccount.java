@@ -22,12 +22,10 @@ public class BankAccount {
 
     public void deposit(double amount) {
         balance += amount;
-        System.out.println("You just deposited " + amount + "to your balance, and you now have " + balance);
     }
 
     public void withdraw (double amount){
         balance -= amount;
-        System.out.println("You just withdrew " + amount + "from your balance, and you now have " + balance);
     }
 
     public double getBalance() {

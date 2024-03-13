@@ -17,13 +17,13 @@ public class RentalApp {
                 System.out.println(rentals[i].toString());
                 System.out.println("The total price of the rental is: " + rentals[i].getTotalPrice());
                 System.out.println("The end date of the rental is: " + rentals[i].getEndDate());
-                System.out.println("The day before the start date of the rental is: " + rentals[i].getStartDate().minusDays(1));
+                System.out.println("The day before the start date of the rental is: " + rentals[i].getStartDate().minusDays(1) + "\n");
             }
         }
         Period per = Period.between(rentals[0].getStartDate(),rentals[1].getStartDate());
         System.out.println("Time between the start date of the two units: ");
         System.out.println(per.getYears() + " years, " + per.getMonths() + " months and " + per.getDays() + " days.");
-        System.out.println("The amount of days between the start date of the two units: " + ChronoUnit.DAYS.between(rentals[0].getStartDate(),rentals[1].getStartDate()));
+        System.out.println("The amount of days between the start date of the two units: " + ChronoUnit.DAYS.between(rentals[0].getStartDate(),rentals[1].getStartDate()) + " days");
 
     }
 

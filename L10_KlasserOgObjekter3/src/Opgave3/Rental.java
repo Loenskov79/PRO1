@@ -40,8 +40,12 @@ public class Rental {
         return price * days;
     }
 
+    public int getNumber() {
+        return number;
+    }
+
     @Override
     public String toString() {
-        return "Rental unit: ";
+        return "Rental unit: " + getNumber();
     }
 }

@@ -1,8 +1,9 @@
 package StaticOpgaver;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class ATMApp {
+public class ATMAppUpdated {
 
     private static ATM atm;
     private static Scanner scanner;
@@ -50,29 +51,39 @@ public class ATMApp {
             System.out.println("3: Withdraw money ");
             System.out.println("4: Exit ");
 
-            if (scanner.hasNextInt()) {
+            try {
                 chosenAction = scanner.nextInt();
+
                 if (chosenAction == 1) {
                     System.out.println("Current balance is: $" + atm.getCurrentAccount().getBalance());
                     MainMenu();
                 } else if (chosenAction == 2) {
-                    System.out.println("Please enter the amount you with to deposit: ");
-                    if (scanner.hasNextInt()) {
-                        int deposit = scanner.nextInt();
-                        atm.getCurrentAccount().deposit(deposit);
-                        System.out.println("You just deposited: $" + deposit + " and you now have $" + atm.getCurrentAccount().getBalance());
-                    } else {
-                        System.out.println("Invalid input! Please enter a valid integer amount");
-                        scanner.next();
+                    boolean validDeposit = false;
+                    while (!validDeposit) {
+                        System.out.println("Please enter the amount you with to deposit: ");
+                        if (scanner.hasNextInt()) {
+                            int deposit = scanner.nextInt();
+                            atm.getCurrentAccount().deposit(deposit);
+                            System.out.println("You just deposited: $" + deposit + " and you now have $" + atm.getCurrentAccount().getBalance());
+                            validDeposit = true;
+                        } else {
+                            System.out.println("Invalid input! Please enter a valid integer");
+                            scanner.next();
+                        }
                     }
                 } else if (chosenAction == 3) {
-                    System.out.println("Please enter the amount you wish to withdraw");
-                    if (scanner.hasNextInt()) {
-                        int withdraw = scanner.nextInt();
-                        atm.getCurrentAccount().withdraw(withdraw);
-                        System.out.println("You just withdrew: $" + withdraw + " and you now have $" + atm.getCurrentAccount().getBalance());
-                    } else {
-                        System.out.println("Invalid input! Please enter a valid integer amount");
+                    boolean validWithdrawal = false;
+                    while (!validWithdrawal) {
+                        System.out.println("Please enter the amount you wish to withdraw");
+                        if (scanner.hasNextInt()) {
+                            int withdraw = scanner.nextInt();
+                            atm.getCurrentAccount().withdraw(withdraw);
+                            System.out.println("You just withdrew: $" + withdraw + " and you now have $" + atm.getCurrentAccount().getBalance());
+                            validWithdrawal = true;
+                        } else {
+                            System.out.println("Invalid input! Please enter a valid integer");
+                            scanner.next();
+                        }
                     }
                 } else if (chosenAction == 4) {
                     System.out.println("Thank you for using the ATM. Have a nice day!\n");
@@ -80,10 +91,12 @@ public class ATMApp {
                 } else {
                     System.out.println("Not a valid input! Please choose one of the available actions.");
                 }
-            } else {
+            } catch (InputMismatchException e) {
                 System.out.println("Invalid input! Please enter a valid integer.");
                 scanner.next();
+                chosenAction = 0;
             }
         }
     }
+
 }
