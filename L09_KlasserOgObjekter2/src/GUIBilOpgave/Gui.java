@@ -1,5 +1,6 @@
 package GUIBilOpgave;
 
+import javafx.animation.Animation;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.layout.Pane;
@@ -8,8 +9,12 @@ import javafx.scene.shape.Circle;
 import javafx.scene.shape.Line;
 import javafx.scene.shape.Rectangle;
 import javafx.stage.Stage;
+import javafx.animation.AnimationTimer;
 
 public class Gui extends Application {
+
+    private Rectangle sky;
+    private int blueValue = 255;
 
     @Override
     public void start(Stage stage) {
@@ -19,6 +24,28 @@ public class Gui extends Application {
         stage.setTitle("Loops"); // may be changed
         stage.setScene(scene);
         stage.show();
+
+        AnimationTimer timer = new AnimationTimer() {
+            private boolean isDarkening = true;
+            @Override
+            public void handle(long now) {
+                if (isDarkening) {
+                    blueValue -= 1;
+                    if (blueValue <= 0) {
+                        blueValue = 0;
+                        isDarkening = false;
+                    }
+                } else {
+                    blueValue += 1;
+                    if (blueValue >= 255);
+                    blueValue = 255;
+                    isDarkening = true;
+                }
+
+                sky.setFill(Color.rgb(0, 0, blueValue));
+            }
+        };
+        timer.start();
     }
 
     private Pane initContent() {
@@ -42,7 +69,7 @@ public class Gui extends Application {
 
     private void drawCar(Pane pane, Car car) {
 
-        Rectangle sky = new Rectangle();
+        sky = new Rectangle();
         sky.setX (0);
         sky.setY(0);
         sky.setWidth(600);
