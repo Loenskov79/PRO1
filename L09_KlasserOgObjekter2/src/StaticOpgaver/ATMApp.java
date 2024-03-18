@@ -56,7 +56,7 @@ public class ATMApp {
                     System.out.println("Current balance is: $" + atm.getCurrentAccount().getBalance());
                     MainMenu();
                 } else if (chosenAction == 2) {
-                    System.out.println("Please enter the amount you with to deposit: ");
+                    System.out.println("Please enter the amount you wish to deposit: ");
                     if (scanner.hasNextInt()) {
                         int deposit = scanner.nextInt();
                         atm.getCurrentAccount().deposit(deposit);
