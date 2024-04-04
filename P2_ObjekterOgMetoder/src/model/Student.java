@@ -7,12 +7,20 @@ public class Student {
 
     private String name;
     private boolean active;
+    private int amountOfGrades;
     private ArrayList<Integer> grades = new ArrayList<>();
     private ArrayList<Character> studentAnswers = new ArrayList<>();
 
     public Student(String name, boolean active) {
         this.name = name;
         this.active = active;
+    }
+
+    public Student(String name, boolean active, int amountOfGrades, ArrayList<Integer> grades) {
+        this.name = name;
+        this.active = active;
+        this.amountOfGrades = amountOfGrades;
+        this.grades = grades;
     }
 
     public String toString () {
