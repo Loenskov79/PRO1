@@ -2,10 +2,10 @@ public class Konto {
 
     int nr;
     int saldo;
-    String kontoType;
+    KontoType kontoType;
     String status;
 
-    public Konto(String kontoType, int nr) {
+    public Konto(KontoType kontoType, int nr) {
         this.kontoType = kontoType;
         this.nr = nr;
         this.saldo = 0;
@@ -28,11 +28,11 @@ public class Konto {
         this.saldo = saldo;
     }
 
-    public String getKontoType() {
+    public KontoType getKontoType() {
         return kontoType;
     }
 
-    public void setKontoType(String kontoType) {
+    public void setKontoType(KontoType kontoType) {
         this.kontoType = kontoType;
     }
 
@@ -73,7 +73,7 @@ public class Konto {
     public void printKonto() {
         System.out.println("---------------------------------");
         System.out.println("Dit kontonr er: " + nr);
-        System.out.println("Din kontotype er: " + kontoType);
+        System.out.println("Din kontotype er: " + kontoType.getName());
         System.out.println("Lige nu står der: " + this.saldo + "$ på din konto");
         System.out.println("Din konto er: " + this.status);
         System.out.println("---------------------------------");
