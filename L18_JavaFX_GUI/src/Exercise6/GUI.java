@@ -33,6 +33,7 @@ public class GUI extends Application {
     private final Button delete = new Button("Delete");
     private ArrayList<Student> students = new ArrayList<>();
     private final Button inc = new Button("Inc");
+    private final Button reset = new Button("Reset");
 
     private void initContent(GridPane pane) {
         // set padding of the pane
@@ -74,8 +75,6 @@ public class GUI extends Application {
 
         pane2.add(inc,2,1);
 
-
-        Button reset = new Button("Reset");
         pane2.add(reset,3,1);
 
         pane2.add(checkbox,1,2);
@@ -122,28 +121,21 @@ public class GUI extends Application {
 
     public void updateButton() {
         String name = txfName.getText().trim();
-        int age = Integer.parseInt(txAge.getText().trim());
-        boolean isActive = false;
-        if (checkbox.isSelected()) {
-            isActive = true;
-        } else;
+        String ageText = txAge.getText().trim();
+        int age = students.get(0).getAge();
+        boolean isActive = checkbox.isSelected();
 
-        if (txfName.getText().trim().isEmpty()) {
-            name = students.get(0).getName();
-            age = age;
-        } else if (txAge.getText().trim().isEmpty()) {
-            name = txfName.getText().trim();
-            age = students.get(0).getAge();
-        } else if (txAge.getText().trim().isEmpty() && isActive == false) {
-            name = name;
-            age = students.get(0).getAge();
-            isActive = students.get(0).isActive();
-        } else {
-            txStudentInfo.setText("Name: " + name + "\nAge: " + age + "\nActive: " + isActive);
+        if (!ageText.isEmpty()) {
+            age = Integer.parseInt(ageText);
+        }
+
+        if (!name.isEmpty()) {
+            students.get(0).setName(name);
         }
 
         Student student = new Student(name, age, isActive);
         students.set(0,student);
+        txStudentInfo.setText("Name: " + student.getName() + "\nAge: " + age + "\nActive: " + isActive);
     }
 
     public void delete() {
