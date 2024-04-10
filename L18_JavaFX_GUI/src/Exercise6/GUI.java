@@ -97,6 +97,7 @@ public class GUI extends Application {
         update.setOnAction(event -> updateButton());
         delete.setOnAction(event -> delete());
         inc.setOnAction(event -> incrementAge());
+        reset.setOnAction(event -> reset());
 
     }
 
@@ -155,6 +156,8 @@ public class GUI extends Application {
     }
 
     public void reset() {
-        String txfName = students.get(0).getName();
+        txfName.setText(students.get(0).getName());
+        txAge.setText(Integer.toString(students.get(0).getAge()));
+        checkbox.setSelected(students.get(0).isActive());
     }
 }
