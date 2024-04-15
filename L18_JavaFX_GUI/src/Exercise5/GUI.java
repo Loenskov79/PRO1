@@ -1,6 +1,7 @@
 package Exercise5;
 
 import javafx.application.Application;
+import javafx.geometry.HPos;
 import javafx.geometry.Insets;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -40,15 +41,14 @@ public class GUI extends Application {
         Label lblName = new Label("Name:");
         pane.add(lblName,0,0);
 
-        pane.add(txfName,0,1, 3, 1);
+        pane.add(txfName,0,1);
 
         Button add = new Button("Add");
-        pane.add(add,2,2);
+        GridPane.setHalignment(add, HPos.CENTER);
+        pane.add(add,0,2);
+
 
         pane.add(txfArrayOfNames,0,3);
-        GridPane.setMargin(txfArrayOfNames, new Insets(20, 0, 0, 0));
-        txfArrayOfNames.setPrefRowCount(7);
-        txfArrayOfNames.setPrefWidth(270);
         txfArrayOfNames.setEditable(false);
 
         add.setOnAction(event -> this.addPerson());
@@ -64,5 +64,6 @@ public class GUI extends Application {
         for (String names: allNames) {
             txfArrayOfNames.appendText(names + "\n");
         }
+        txfName.clear();
     }
 }

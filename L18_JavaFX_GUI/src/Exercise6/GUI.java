@@ -71,6 +71,7 @@ public class GUI extends Application {
 
         pane2.add(txfName,1,0);
 
+        txAge.setPrefWidth(20);
         pane2.add(txAge,1,1);
 
         pane2.add(inc,2,1);

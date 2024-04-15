@@ -16,6 +16,7 @@
       <module fileurl="file://$PROJECT_DIR$/L11_ArrayList/L11_ArrayList.iml" filepath="$PROJECT_DIR$/L11_ArrayList/L11_ArrayList.iml" />
       <module fileurl="file://$PROJECT_DIR$/L12_Opsamling/L12_Opsamling.iml" filepath="$PROJECT_DIR$/L12_Opsamling/L12_Opsamling.iml" />
       <module fileurl="file://$PROJECT_DIR$/L18_JavaFX_GUI/L18_JavaFX_GUI.iml" filepath="$PROJECT_DIR$/L18_JavaFX_GUI/L18_JavaFX_GUI.iml" />
+      <module fileurl="file://$PROJECT_DIR$/L19_JavaFX_GUI2/L19_JavaFX_GUI2.iml" filepath="$PROJECT_DIR$/L19_JavaFX_GUI2/L19_JavaFX_GUI2.iml" />
       <module fileurl="file://$PROJECT_DIR$/P1_DiceGame/P1_DiceGame.iml" filepath="$PROJECT_DIR$/P1_DiceGame/P1_DiceGame.iml" />
       <module fileurl="file://$PROJECT_DIR$/P2_ObjekterOgMetoder/P2_ObjekterOgMetoder.iml" filepath="$PROJECT_DIR$/P2_ObjekterOgMetoder/P2_ObjekterOgMetoder.iml" />
       <module fileurl="file://$PROJECT_DIR$/PRO1 projects.iml" filepath="$PROJECT_DIR$/PRO1 projects.iml" />
@@ -25,6 +26,7 @@
       <module fileurl="file://$PROJECT_DIR$/StudiestartsProeve/StudiestartsProeve.iml" filepath="$PROJECT_DIR$/StudiestartsProeve/StudiestartsProeve.iml" />
       <module fileurl="file://$PROJECT_DIR$/ThreadingInTheGym/ThreadingInTheGym.iml" filepath="$PROJECT_DIR$/ThreadingInTheGym/ThreadingInTheGym.iml" />
       <module fileurl="file://$PROJECT_DIR$/UnbeatableTicTacToe/UnbeatableTicTacToe.iml" filepath="$PROJECT_DIR$/UnbeatableTicTacToe/UnbeatableTicTacToe.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Yatzy/Yatzy.iml" filepath="$PROJECT_DIR$/Yatzy/Yatzy.iml" />
     </modules>
   </component>
 </project>

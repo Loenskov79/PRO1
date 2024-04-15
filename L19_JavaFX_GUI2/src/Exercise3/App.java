@@ -1,7 +1,9 @@
-package Exercise1;
+package Exercise3;
 
 public class App {
+
     public static void main(String[] args) {
-        MainApp.launch(MainApp.class);
+        GUI.launch(GUI.class);
     }
+
 }
