@@ -1,4 +1,4 @@
-package model;
+package Exercise4;
 
 import java.util.ArrayList;
 
@@ -45,6 +45,19 @@ public class SwimmerApp {
             System.out.println(s.getName() + "'s bedste tid: " + s.bestLapTime());
         }
 
+        TrainingPlan t1 = new TrainingPlan('A', 16, 12);
+        Swimmer Martin = t1.createSwimmer("Martin", 2003, lapTimes, "KSDH");
+        Swimmer Mads = t1.createSwimmer("Mads", 2002, lapTimes, "AGF");
+
+        for (Swimmer s: t1.getSwimmers()) {
+            System.out.println("The swimmers on the trainingplan t1 are: " + s.getName() + " who are swimming for: " + s.getClub());
+        }
+
+        t1.removeSwimmer(Martin);
+
+        for (Swimmer s: t1.getSwimmers()) {
+            System.out.println("The swimmers on the trainingplan t1 are: " + s.getName() + " who are swimming for: " + s.getClub());
+        }
     }
     
 }

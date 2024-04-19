@@ -1,4 +1,4 @@
-package model;
+package Exercise4;
 
 import java.util.*;
 
