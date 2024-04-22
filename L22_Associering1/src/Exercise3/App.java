@@ -11,11 +11,12 @@ public class App {
         Car c5 = new Car("MAII111", 2010);
 
         Rental r1 = new Rental(1, 30, "17/04/2024");
-        Rental r2 = new Rental(2, 60, "10/3/2024");
+        Rental r2 = new Rental(2, 60, "10/03/2024");
 
         r1.addCar(c1);
         r1.addCar(c2);
         r1.addCar(c3);
+
         r2.addCar(c4);
         r2.addCar(c5);
 
