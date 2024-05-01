@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/L24_Arkitektur/Exercise2/Exercise2.iml" filepath="$PROJECT_DIR$/L24_Arkitektur/Exercise2/Exercise2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/KAS_Projekt/KAS_Projekt.iml" filepath="$PROJECT_DIR$/KAS_Projekt/KAS_Projekt.iml" />
       <module fileurl="file://$PROJECT_DIR$/L00_Intro/L00_Intro.iml" filepath="$PROJECT_DIR$/L00_Intro/L00_Intro.iml" />
       <module fileurl="file://$PROJECT_DIR$/L01_SimpleProgrammer/L01_SimpleProgrammer.iml" filepath="$PROJECT_DIR$/L01_SimpleProgrammer/L01_SimpleProgrammer.iml" />
       <module fileurl="file://$PROJECT_DIR$/L02_VariableOgScanner/L02_VariableOgScanner.iml" filepath="$PROJECT_DIR$/L02_VariableOgScanner/L02_VariableOgScanner.iml" />
@@ -19,6 +21,8 @@
       <module fileurl="file://$PROJECT_DIR$/L19_JavaFX_GUI2/L19_JavaFX_GUI2.iml" filepath="$PROJECT_DIR$/L19_JavaFX_GUI2/L19_JavaFX_GUI2.iml" />
       <module fileurl="file://$PROJECT_DIR$/L22_Associering1/L22_Associering1.iml" filepath="$PROJECT_DIR$/L22_Associering1/L22_Associering1.iml" />
       <module fileurl="file://$PROJECT_DIR$/L23_Associering2/L23_Associering2.iml" filepath="$PROJECT_DIR$/L23_Associering2/L23_Associering2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/L24_Arkitektur/L24_Arkitektur.iml" filepath="$PROJECT_DIR$/L24_Arkitektur/L24_Arkitektur.iml" />
+      <module fileurl="file://$PROJECT_DIR$/L25_ExceptionsAndFiles/L25_ExceptionsAndFiles.iml" filepath="$PROJECT_DIR$/L25_ExceptionsAndFiles/L25_ExceptionsAndFiles.iml" />
       <module fileurl="file://$PROJECT_DIR$/P1_DiceGame/P1_DiceGame.iml" filepath="$PROJECT_DIR$/P1_DiceGame/P1_DiceGame.iml" />
       <module fileurl="file://$PROJECT_DIR$/P2_ObjekterOgMetoder/P2_ObjekterOgMetoder.iml" filepath="$PROJECT_DIR$/P2_ObjekterOgMetoder/P2_ObjekterOgMetoder.iml" />
       <module fileurl="file://$PROJECT_DIR$/PRO1 projects.iml" filepath="$PROJECT_DIR$/PRO1 projects.iml" />

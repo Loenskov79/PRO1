@@ -58,5 +58,4 @@ public class TrainingPlan {
 	public String toString() {
 		return "Level: " + level + " | Hours in the water: " + weeklyWaterHours + " | Hours in the gym: " + weeklyStrengthHours;
 	}
-	
 }
