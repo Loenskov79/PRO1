@@ -8,26 +8,30 @@ import java.util.ArrayList;
 public class Booking {
 
     private Hotel hotel;
-    private ArrayList<Tillæg> tillæg;
+    private ArrayList<Tillæg> valgteTillæg = new ArrayList<>();
     private Værelse værelse;
 
     public Booking(Hotel hotel, boolean harLedsager) {
         this.hotel = hotel;
         if (harLedsager == true) {
-            this.værelse = hotel.createVærelse(VærelseType.DOBBELT);
+            this.værelse = hotel.getDobbeltværelse();
         } else {
-            this.værelse = hotel.createVærelse(VærelseType.SINGLE);
+            this.værelse = hotel.getSingleværelse();
         }
     }
 
-    public double beregnPris() {
+    public double beregnPrisPerDag() {
         double pris = 0;
-        //TODO
+        pris += værelse.getPris();
+        for (Tillæg t : valgteTillæg) {
+            pris += t.getPris();
+        }
         return pris;
     }
 
-    public void addTillæg(TillægType type, double pris, String beskrivelse) {
-        Tillæg tillæg = new Tillæg(type, pris, beskrivelse);
-        //TODO
+    public void tilføjTillæg(Tillæg tillæg) {
+        if (hotel.getTillæg().contains(tillæg)) {
+            valgteTillæg.add(tillæg);
+        }
     }
 }

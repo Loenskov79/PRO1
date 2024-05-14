@@ -14,4 +14,15 @@ public class Tillæg {
         this.beskrivelse = beskrivelse;
     }
 
+    public TillægType getType() {
+        return type;
+    }
+
+    public double getPris() {
+        return pris;
+    }
+
+    public String getBeskrivelse() {
+        return beskrivelse;
+    }
 }
