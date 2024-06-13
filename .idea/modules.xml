@@ -25,6 +25,7 @@
       <module fileurl="file://$PROJECT_DIR$/L24_Arkitektur/L24_Arkitektur.iml" filepath="$PROJECT_DIR$/L24_Arkitektur/L24_Arkitektur.iml" />
       <module fileurl="file://$PROJECT_DIR$/L25_ExceptionsAndFiles/L25_ExceptionsAndFiles.iml" filepath="$PROJECT_DIR$/L25_ExceptionsAndFiles/L25_ExceptionsAndFiles.iml" />
       <module fileurl="file://$PROJECT_DIR$/L26_Searching/L26_Searching.iml" filepath="$PROJECT_DIR$/L26_Searching/L26_Searching.iml" />
+      <module fileurl="file://$PROJECT_DIR$/L27_Sorting/L27_Sorting.iml" filepath="$PROJECT_DIR$/L27_Sorting/L27_Sorting.iml" />
       <module fileurl="file://$PROJECT_DIR$/P1_DiceGame/P1_DiceGame.iml" filepath="$PROJECT_DIR$/P1_DiceGame/P1_DiceGame.iml" />
       <module fileurl="file://$PROJECT_DIR$/P2_ObjekterOgMetoder/P2_ObjekterOgMetoder.iml" filepath="$PROJECT_DIR$/P2_ObjekterOgMetoder/P2_ObjekterOgMetoder.iml" />
       <module fileurl="file://$PROJECT_DIR$/PRO1 projects.iml" filepath="$PROJECT_DIR$/PRO1 projects.iml" />
@@ -33,6 +34,8 @@
       <module fileurl="file://$PROJECT_DIR$/SU3_Analysemoenstre/SU3_Analysemoenstre.iml" filepath="$PROJECT_DIR$/SU3_Analysemoenstre/SU3_Analysemoenstre.iml" />
       <module fileurl="file://$PROJECT_DIR$/SU4_Arkitektur/SU4_Arkitektur.iml" filepath="$PROJECT_DIR$/SU4_Arkitektur/SU4_Arkitektur.iml" />
       <module fileurl="file://$PROJECT_DIR$/SU5_Adfaerdsmoenstre/SU5_Adfaerdsmoenstre.iml" filepath="$PROJECT_DIR$/SU5_Adfaerdsmoenstre/SU5_Adfaerdsmoenstre.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SemesterproeveEksempel/SemesterproeveEksempel.iml" filepath="$PROJECT_DIR$/SemesterproeveEksempel/SemesterproeveEksempel.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SemesterproeveEksempel2/SemesterproeveEksempel2.iml" filepath="$PROJECT_DIR$/SemesterproeveEksempel2/SemesterproeveEksempel2.iml" />
       <module fileurl="file://$PROJECT_DIR$/StudiestartsProeve/StudiestartsProeve.iml" filepath="$PROJECT_DIR$/StudiestartsProeve/StudiestartsProeve.iml" />
       <module fileurl="file://$PROJECT_DIR$/ThreadingInTheGym/ThreadingInTheGym.iml" filepath="$PROJECT_DIR$/ThreadingInTheGym/ThreadingInTheGym.iml" />
       <module fileurl="file://$PROJECT_DIR$/UnbeatableTicTacToe/UnbeatableTicTacToe.iml" filepath="$PROJECT_DIR$/UnbeatableTicTacToe/UnbeatableTicTacToe.iml" />
